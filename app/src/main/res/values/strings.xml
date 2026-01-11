@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="soil_types">
+        <item>Sandy</item>
+        <item>Loamy</item>
+        <item>Clay</item>
+    </string-array>
+</resources>

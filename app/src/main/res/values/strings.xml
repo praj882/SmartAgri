@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">My Application</string>
     <string-array name="soil_types">
+        <item>Select Soil Type</item>
         <item>Sandy</item>
         <item>Loamy</item>
         <item>Clay</item>
+    </string-array>
+    <string-array name="crop_types">
+        <item>Select Crop Name</item>
+        <item>Tomato</item>
+        <item>Brinjal</item>
+        <item>Chilli</item>
     </string-array>
 </resources>

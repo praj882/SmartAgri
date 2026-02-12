@@ -1,0 +1,307 @@
+[debug] [2026-01-14T13:34:03.199Z] ----------------------------------------------------------------------
+[debug] [2026-01-14T13:34:03.204Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2026-01-14T13:34:03.205Z] CLI Version:   15.2.1
+[debug] [2026-01-14T13:34:03.205Z] Platform:      win32
+[debug] [2026-01-14T13:34:03.205Z] Node Version:  v24.13.0
+[debug] [2026-01-14T13:34:03.206Z] Time:          Wed Jan 14 2026 19:04:03 GMT+0530 (India Standard Time)
+[debug] [2026-01-14T13:34:03.206Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-14T13:34:06.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-14T13:34:06.178Z] > authorizing via signed-in user (rajprashant882@gmail.com)
+[info] i  emulators: Starting emulators: functions, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, extensions"}}
+[debug] [2026-01-14T13:34:06.187Z] Checked if tokens are valid: true, expires at: 1768399154401
+[debug] [2026-01-14T13:34:06.187Z] Checked if tokens are valid: true, expires at: 1768399154401
+[debug] [2026-01-14T13:34:06.189Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/smartfarm-fa423 [none]
+[debug] [2026-01-14T13:34:07.718Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/smartfarm-fa423 200
+[debug] [2026-01-14T13:34:07.718Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/smartfarm-fa423 {"projectNumber":"499068054062","projectId":"smartfarm-fa423","lifecycleState":"ACTIVE","name":"SmartFarm","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-07T17:01:21.957414Z"}
+[debug] [2026-01-14T13:34:07.739Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-14T13:34:07.739Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-01-14T13:34:07.748Z] Write emulator hub locator at C:\Users\Lenovo\AppData\Local\Temp\hub-smartfarm-fa423.json
+[debug] [2026-01-14T13:34:07.760Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2026-01-14T13:34:07.770Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-14T13:34:07.770Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-14T13:34:07.771Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-14T13:34:07.771Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2026-01-14T13:34:07.798Z] defaultcredentials: writing to file C:\Users\Lenovo\AppData\Roaming\firebase\rajprashant882_gmail_com_application_default_credentials.json
+[debug] [2026-01-14T13:34:07.801Z] Setting GAC to C:\Users\Lenovo\AppData\Roaming\firebase\rajprashant882_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Lenovo\\AppData\\Roaming\\firebase\\rajprashant882_gmail_com_application_default_credentials.json"}}
+[debug] [2026-01-14T13:34:07.801Z] Checked if tokens are valid: true, expires at: 1768399154401
+[debug] [2026-01-14T13:34:07.802Z] Checked if tokens are valid: true, expires at: 1768399154401
+[debug] [2026-01-14T13:34:07.802Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/smartfarm-fa423/adminSdkConfig [none]
+[debug] [2026-01-14T13:34:08.424Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/smartfarm-fa423/adminSdkConfig 200
+[debug] [2026-01-14T13:34:08.424Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/smartfarm-fa423/adminSdkConfig {"projectId":"smartfarm-fa423","databaseURL":"https://smartfarm-fa423-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"smartfarm-fa423.firebasestorage.app"}
+[debug] [2026-01-14T13:34:08.459Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "E:\SmartAgri\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\SmartAgri\\functions\" for Cloud Functions..."}}
+[debug] [2026-01-14T13:34:08.488Z] Validating nodejs source
+[debug] [2026-01-14T13:34:12.178Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.4.1"
+  },
+  "private": true
+}
+[debug] [2026-01-14T13:34:12.179Z] Building nodejs source
+[debug] [2026-01-14T13:34:12.179Z] Failed to find version of module node: reached end of search path E:\SmartAgri\functions\node_modules
+[info] +  functions: Using node@24 from host. 
+[debug] [2026-01-14T13:34:12.183Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-01-14T13:34:12.209Z] Found firebase-functions binary at 'E:\SmartAgri\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8562
+
+[debug] [2026-01-14T13:34:13.346Z] Got response from /__/functions.yaml {"endpoints":{"getCropDecision":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getCropDecision"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2026-01-14T13:34:17.408Z] defaultcredentials: writing to file C:\Users\Lenovo\AppData\Roaming\firebase\rajprashant882_gmail_com_application_default_credentials.json
+[debug] [2026-01-14T13:34:17.410Z] Setting GAC to C:\Users\Lenovo\AppData\Roaming\firebase\rajprashant882_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Lenovo\\AppData\\Roaming\\firebase\\rajprashant882_gmail_com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: getCropDecision. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getCropDecision."}}
+[info] +  functions[us-central1-getCropDecision]: http function initialized (http://127.0.0.1:5001/smartfarm-fa423/us-central1/getCropDecision). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/smartfarm-fa423/us-central1/getCropDecision)."}}
+[debug] [2026-01-14T13:34:17.423Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-01-14T13:37:50.890Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/healthCheck-2026-01-14T13:37:50.890Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:37:50.891Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/healthCheck-2026-01-14T13:37:50.890Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:37:50.898Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:38:10.140Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:38:10.140Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:38:10.140Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:38:10.140Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:38:10.141Z] Accepted request GET /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T13:38:10.146Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T13:38:10.148Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T13:38:10.172Z] [worker-pool] addWorker(us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getCropDecision)"}}
+[debug] [2026-01-14T13:38:10.174Z] [worker-pool] Adding worker with key us-central1-getCropDecision, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getCropDecision, total=1"}}
+[debug] [2026-01-14T13:38:12.634Z] [runtime-status] [2260] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.6.0","resolution":"E:\\SmartAgri\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.6.0\",\"resolution\":\"E:\\\\SmartAgri\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-01-14T13:38:12.637Z] [runtime-status] [2260] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.0.3","resolution":"E:\\SmartAgri\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.0.3\",\"resolution\":\"E:\\\\SmartAgri\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2026-01-14T13:38:12.637Z] [runtime-status] [2260] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-01-14T13:38:12.639Z] [runtime-status] [2260] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.0.3","resolution":"E:\\SmartAgri\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.0.3\",\"resolution\":\"E:\\\\SmartAgri\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2026-01-14T13:38:12.639Z] [runtime-status] [2260] Detected firebase-functions v7+, skipping legacy stubs. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Detected firebase-functions v7+, skipping legacy stubs."}}
+[debug] [2026-01-14T13:38:12.640Z] [runtime-status] [2260] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.6.0","resolution":"E:\\SmartAgri\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.6.0\",\"resolution\":\"E:\\\\SmartAgri\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-01-14T13:38:12.839Z] [runtime-status] [2260] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.0.3","resolution":"E:\\SmartAgri\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.0.3\",\"resolution\":\"E:\\\\SmartAgri\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2026-01-14T13:38:13.924Z] [runtime-status] [2260] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"13.6.0","resolution":"E:\\SmartAgri\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"13.6.0\",\"resolution\":\"E:\\\\SmartAgri\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2026-01-14T13:38:13.937Z] [runtime-status] [2260] Functions runtime initialized. {"cwd":"E:\\SmartAgri\\functions","node_version":"24.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Functions runtime initialized. {\"cwd\":\"E:\\\\SmartAgri\\\\functions\",\"node_version\":\"24.13.0\"}"}}
+[debug] [2026-01-14T13:38:13.937Z] [runtime-status] [2260] Listening to port: \\?\pipe\fire_emu_b09b63272a85a64d {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[runtime-status] [2260] Listening to port: \\\\?\\pipe\\fire_emu_b09b63272a85a64d"}}
+[debug] [2026-01-14T13:38:13.959Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:38:13.960Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T13:38:13.962Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T13:38:13.972Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 10.5118ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 10.5118ms"}}
+[debug] [2026-01-14T13:38:13.974Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:38:13.974Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T13:38:13.975Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T13:38:13.975Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:40:52.190Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:40:52.190Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:40:52.190Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:40:52.190Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:40:52.190Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T13:40:52.194Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T13:40:52.194Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T13:40:52.194Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T13:40:52.196Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T13:40:52.237Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 41.547ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 41.547ms"}}
+[debug] [2026-01-14T13:40:52.239Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:40:52.239Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T13:40:52.239Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T13:40:52.240Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:12.381Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:12.381Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:12.381Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:12.381Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:41:12.381Z] Accepted request GET /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T13:41:12.384Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T13:41:12.384Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T13:41:12.384Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T13:41:12.386Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T13:41:12.391Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 5.4199ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 5.4199ms"}}
+[debug] [2026-01-14T13:41:12.393Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:41:12.394Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T13:41:12.395Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T13:41:12.397Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:14.923Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:14.923Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:14.924Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:14.923Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:41:14.924Z] Accepted request GET /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T13:41:14.924Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T13:41:14.925Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T13:41:14.925Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T13:41:14.926Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T13:41:14.930Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 4.3142ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 4.3142ms"}}
+[debug] [2026-01-14T13:41:14.932Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:41:14.932Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T13:41:14.932Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T13:41:14.933Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:16.107Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:16.107Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:16.107Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:16.107Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:41:16.107Z] Accepted request GET /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T13:41:16.108Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T13:41:16.108Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T13:41:16.108Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T13:41:16.109Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T13:41:16.113Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 3.6764ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 3.6764ms"}}
+[debug] [2026-01-14T13:41:16.116Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:41:16.116Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T13:41:16.116Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T13:41:16.117Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:16.972Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:16.972Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T13:41:16.972Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T13:41:16.972Z"],"workRunningCount":1}
+[debug] [2026-01-14T13:41:16.972Z] Accepted request GET /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T13:41:16.974Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T13:41:16.974Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T13:41:16.974Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T13:41:16.975Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T13:41:16.979Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 3.9283ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 3.9283ms"}}
+[debug] [2026-01-14T13:41:16.980Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T13:41:16.981Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T13:41:16.981Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T13:41:16.981Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:28:40.796Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:28:40.778Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:28:40.820Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:28:40.778Z"],"workRunningCount":1}
+[debug] [2026-01-14T14:28:40.821Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T14:28:40.996Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T14:28:41.005Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T14:28:41.007Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T14:28:41.024Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T14:28:41.366Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 344.2125ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 344.2125ms"}}
+[debug] [2026-01-14T14:28:41.378Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T14:28:41.378Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T14:28:41.378Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T14:28:41.381Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:29:08.537Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:29:08.537Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:29:08.537Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:29:08.537Z"],"workRunningCount":1}
+[debug] [2026-01-14T14:29:08.537Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T14:29:08.546Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T14:29:08.548Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T14:29:08.550Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T14:29:08.552Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T14:29:08.565Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 13.412ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 13.412ms"}}
+[debug] [2026-01-14T14:29:08.572Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T14:29:08.573Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T14:29:08.574Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T14:29:08.576Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:29:09.650Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:29:09.649Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:29:09.650Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:29:09.649Z"],"workRunningCount":1}
+[debug] [2026-01-14T14:29:09.651Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T14:29:09.654Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T14:29:09.656Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T14:29:09.657Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T14:29:09.660Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T14:29:09.672Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 12.4355ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 12.4355ms"}}
+[debug] [2026-01-14T14:29:09.674Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T14:29:09.674Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T14:29:09.675Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T14:29:09.675Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:58:42.629Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:58:42.629Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-14T14:58:42.630Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-14T14:58:42.629Z"],"workRunningCount":1}
+[debug] [2026-01-14T14:58:42.630Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-14T14:58:42.645Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-14T14:58:42.647Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-14T14:58:42.648Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-14T14:58:42.654Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-14T14:58:42.669Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 15.4802ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 15.4802ms"}}
+[debug] [2026-01-14T14:58:42.670Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-14T14:58:42.670Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-14T14:58:42.672Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-14T14:58:42.673Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T12:53:15.760Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T12:53:15.755Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T12:53:15.784Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T12:53:15.755Z"],"workRunningCount":1}
+[debug] [2026-01-15T12:53:15.785Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-15T12:53:15.849Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-15T12:53:15.850Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-15T12:53:15.850Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-15T12:53:15.861Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-15T12:53:16.022Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 181.0192ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 181.0192ms"}}
+[debug] [2026-01-15T12:53:16.109Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-15T12:53:16.109Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-15T12:53:16.114Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-15T12:53:16.115Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T12:53:16.769Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T12:53:16.769Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T12:53:16.769Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T12:53:16.769Z"],"workRunningCount":1}
+[debug] [2026-01-15T12:53:16.769Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-15T12:53:16.772Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-15T12:53:16.772Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-15T12:53:16.773Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-15T12:53:16.774Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-15T12:53:16.779Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 5.2182ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 5.2182ms"}}
+[debug] [2026-01-15T12:53:16.781Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-15T12:53:16.781Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-15T12:53:16.781Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-15T12:53:16.782Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T12:53:26.699Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T12:53:26.699Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T12:53:26.699Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T12:53:26.699Z"],"workRunningCount":1}
+[debug] [2026-01-15T12:53:26.699Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-15T12:53:26.702Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-15T12:53:26.702Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-15T12:53:26.702Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-15T12:53:26.703Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-15T12:53:26.717Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 13.8372ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 13.8372ms"}}
+[debug] [2026-01-15T12:53:26.721Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-15T12:53:26.721Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-15T12:53:26.721Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-15T12:53:26.722Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T14:26:11.603Z] [work-queue] {"queuedWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T14:26:11.603Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-15T14:26:11.603Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/smartfarm-fa423/us-central1/getCropDecision-2026-01-15T14:26:11.603Z"],"workRunningCount":1}
+[debug] [2026-01-15T14:26:11.604Z] Accepted request POST /smartfarm-fa423/us-central1/getCropDecision --> us-central1-getCropDecision
+[debug] [2026-01-15T14:26:11.609Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-15T14:26:11.609Z] [functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/smartfarm-fa423/us-central1/getCropDecision, mapping to path=/"}}
+[debug] [2026-01-15T14:26:11.609Z] [worker-pool] submitRequest(triggerId=us-central1-getCropDecision) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getCropDecision)"}}
+[info] i  functions: Beginning execution of "us-central1-getCropDecision" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Beginning execution of \"us-central1-getCropDecision\""}}
+[debug] [2026-01-15T14:26:11.619Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: BUSY"}}
+[debug] [2026-01-15T14:26:11.628Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getCropDecision" in 13.8942ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finished \"us-central1-getCropDecision\" in 13.8942ms"}}
+[debug] [2026-01-15T14:26:11.653Z] [worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"[worker-us-central1-getCropDecision-0560fed4-37f2-4c85-95c8-1642c7992d54]: IDLE"}}
+[debug] [2026-01-15T14:26:11.653Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-15T14:26:11.654Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getCropDecision"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-15T14:26:11.654Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

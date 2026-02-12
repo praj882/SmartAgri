@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://smartfarm-fa423-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">499068054062</string>
+    <string name="google_api_key" translatable="false">AIzaSyBz7ikHGJ2v3Ld8YmHJx3X5VN_WUxrWMc8</string>
+    <string name="google_app_id" translatable="false">1:499068054062:android:ce68a496035a51fd15cdbf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBz7ikHGJ2v3Ld8YmHJx3X5VN_WUxrWMc8</string>
+    <string name="google_storage_bucket" translatable="false">smartfarm-fa423.firebasestorage.app</string>
+    <string name="project_id" translatable="false">smartfarm-fa423</string>
+</resources>

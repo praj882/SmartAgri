@@ -1,18 +1,22 @@
 package com.example.myapplication;
 
-import com.example.myapplication.CropStageCalculator;
-
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.example.myapplication.data.local.FirebasePaths;
+import com.example.myapplication.data.local.SessionManager;
+import com.example.myapplication.model.LatestFarmData;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.firebase.database.DataSnapshot;
@@ -20,6 +24,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference ref;
     FusedLocationProviderClient locationClient;
     VegetableAnalyzer VegAnalyzer;
-    int lastSoil = 0, lastN = 0, lastP = 0, lastK = 0, lastTemp = 0, lasthum = 0;
+    int lastSoil = 0, lastN = 0, lastP = 0, lastK = 0;
+    float lastTemp = 0, lasthum = 0;
     double lat =0.0;
     double lon =0.0;
     @Override
@@ -56,45 +64,54 @@ public class MainActivity extends AppCompatActivity {
         tvDiseaseRiskResult= findViewById(R.id.tvDiseaseRiskResult);
         Spinner spSoilType = findViewById(R.id.spSoilType);
         CropStageCalculator CropCal;
+        String farmerId = SessionManager.getFarmerId();
+        if (farmerId == null) {
+            Toast.makeText(this, "Farmer not logged in", Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
+        String deviceId = "device_001";
         // CORRECT WAY
-        FirebaseDatabase database = FirebaseDatabase.getInstance(
-                "https://smartfarm-fa423-default-rtdb.asia-southeast1.firebasedatabase.app/"
-        );
-
-        ref = database.getReference("farm1"); // CHANGE IF YOUR NODE IS DIFFERENT
-
+        DatabaseReference ref =
+                FirebasePaths.latestData(farmerId, deviceId);
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()) {
+                Log.d("FB_FIX", "Main onDataChange started");
+                if (!snapshot.exists()) {
+                    tvStatus.setText("No data available");
+                    return;
+                }
+                LatestFarmData data = snapshot.getValue(LatestFarmData.class);
+                if (data == null) {
+                    tvStatus.setText("Mapping failed");
+                    return;
+                }
+                if (data != null) {
+                    // Save for recommendation logic
+                    lastSoil = data.moisture;
+                    lastTemp = data.temperature;
+                    lasthum = data.humidity;
+                    lastN = data.nitrogen;
+                    lastP = data.phosphorus;
+                    lastK = data.potassium;
 
-                    Integer soil = snapshot.child("soilMoisture").getValue(Integer.class);
-                    Integer temp = snapshot.child("temperature").getValue(Integer.class);
-                    Integer hum  = snapshot.child("humidity").getValue(Integer.class);
-                    Integer n = snapshot.child("npk").child("N").getValue(Integer.class);
-                    Integer p = snapshot.child("npk").child("P").getValue(Integer.class);
-                    Integer k = snapshot.child("npk").child("K").getValue(Integer.class);
-
-                    // Save last values for recommendation
-                    lastSoil = soil != null ? soil : 0;
-                    lastTemp = temp != null ? temp : 0;
-                    lasthum = hum != null ? hum : 0;
-                    lastN = n != null ? n : 0;
-                    lastP = p != null ? p : 0;
-                    lastK = k != null ? k : 0;
-
+                    // UI update
                     tvSoil.setText("Soil: " + lastSoil + "%");
-                    tvTemp.setText("Temp: " + lastTemp);
-                    tvHum.setText("Humidity: " + hum);
-                    tvNPK.setText("N:" + lastN + " P:" + lastP + " K:" + lastK);
+                    tvTemp.setText("Temp: " + lastTemp + "°C");
+                    tvHum.setText("Humidity: " + lasthum + "%");
+                    tvNPK.setText(
+                            "N:" + lastN +
+                                    " P:" + lastP +
+                                    " K:" + lastK
+                    );
 
-                    tvStatus.setText("Data updated successfully");
+                    tvStatus.setText("Latest data updated (" + data.source + ")");
                 }
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                tvStatus.setText("DB Error: " + error.getMessage());
-            }
+            public void onCancelled(@NonNull DatabaseError error) {}
         });
         btnRecommend.setOnClickListener(v -> {
 
@@ -150,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             String stage = CropStageCalculator.getStage(crop, date);
 
             String fertilizer =
-                    FertilizerAdvisor.getAdvice(crop,stage,soilType);
+                    FertilizerAdvisor .getAdvice(crop,stage,soilType);
 
             tvFertilizerResult.setText(
                     "Crop Stage: " + stage +
@@ -198,11 +215,23 @@ public class MainActivity extends AppCompatActivity {
                 lon = location.getLongitude();
 
                 // Send to Firebase
-                DatabaseReference ref = FirebaseDatabase.getInstance()
-                        .getReference("farm1/location");
+                DatabaseReference locRef = FirebaseDatabase.getInstance()
+                        .getReference("farmers")
+                        .child(farmerId)
+                        .child("devices")
+                        .child(deviceId)
+                        .child("location");
 
-                ref.child("latitude").setValue(lat);
-                ref.child("longitude").setValue(lon);
+                Map<String, Object> locationMap = new HashMap<>();
+                locationMap.put("latitude", lat);
+                locationMap.put("longitude", lon);
+                locationMap.put("updatedAt", System.currentTimeMillis());
+
+                locRef.setValue(locationMap)
+                        .addOnSuccessListener(aVoid ->
+                                Log.d("FIREBASE", "Location saved successfully"))
+                        .addOnFailureListener(e ->
+                                Log.e("FIREBASE", "Location save failed", e));
             }
             String state = GetLocation.getAddressFromLocation(
                     MainActivity.this,

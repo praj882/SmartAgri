@@ -6,10 +6,10 @@ public class IrrigationAdvisor {
             String cropStage,
             int soilMoisture,
             float temperature,
-            String soilType) {
+            String soilType
+    ) {
 
         soilType = soilType.toLowerCase();
-
         int threshold;
 
         // Soil-type-based threshold
@@ -23,26 +23,30 @@ public class IrrigationAdvisor {
 
         if (soilMoisture < threshold) {
 
-            if (cropStage.equals("Seedling"))
+            if (cropStage.equals("Seedling")) {
                 return "Light irrigation (10–15 min)";
+            }
 
-            if (cropStage.equals("Vegetative"))
+            if (cropStage.equals("Vegetative")) {
                 return "Moderate irrigation (20–30 min)";
+            }
 
-            if (cropStage.equals("Flowering"))
+            if (cropStage.equals("Flowering")) {
                 return "Critical stage – irrigate today";
+            }
 
-            if (cropStage.equals("Fruiting"))
+            if (cropStage.equals("Fruiting")) {
                 return "Irrigation required – avoid stress";
+            }
 
         } else {
             return "No irrigation required today";
         }
 
-        if (temperature > 35)
+        if (temperature > 35) {
             return "High temperature – monitor soil moisture";
+        }
 
         return "Monitor field condition";
     }
 }
-

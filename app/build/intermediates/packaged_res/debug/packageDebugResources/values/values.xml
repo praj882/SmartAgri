@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="crop_types">
+        <item>Select Crop Name</item>
+        <item>Tomato</item>
+        <item>Brinjal</item>
+        <item>Chilli</item>
+    </string-array>
+    <string-array name="soil_types">
+        <item>Select Soil Type</item>
+        <item>Sandy</item>
+        <item>Loamy</item>
+        <item>Clay</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="md_theme_background">#F5F7FA</color>
+    <color name="md_theme_error">#D32F2F</color>
+    <color name="md_theme_onBackground">#263238</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_onSecondary">#1B5E20</color>
+    <color name="md_theme_onSurface">#263238</color>
+    <color name="md_theme_primary">#2E7D32</color>
+    <color name="md_theme_secondary">#81C784</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="status_offline">#E74C3C</color>
+    <color name="status_online">#2ECC71</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">My Application</string>
+    <string name="firebase_database_url" translatable="false">https://smartfarm-fa423-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">499068054062</string>
+    <string name="google_api_key" translatable="false">AIzaSyBz7ikHGJ2v3Ld8YmHJx3X5VN_WUxrWMc8</string>
+    <string name="google_app_id" translatable="false">1:499068054062:android:ce68a496035a51fd15cdbf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBz7ikHGJ2v3Ld8YmHJx3X5VN_WUxrWMc8</string>
+    <string name="google_storage_bucket" translatable="false">smartfarm-fa423.firebasestorage.app</string>
+    <string name="project_id" translatable="false">smartfarm-fa423</string>
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
+</resources>

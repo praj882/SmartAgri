@@ -1,0 +1,61 @@
+type User @table {
+  displayName: String!
+  email: String!
+  createdAt: Timestamp!
+  photoUrl: String
+  role: String
+}
+
+type FarmPlot @table {
+  owner: User!
+  name: String!
+  location: String!
+  size: Float!
+  createdAt: Timestamp!
+  description: String
+  soilType: String
+}
+
+type Crop @table {
+  farmPlot: FarmPlot!
+  name: String!
+  cropType: String!
+  plantingDate: Date!
+  expectedHarvestDate: Date!
+  createdAt: Timestamp!
+  variety: String
+  notes: String
+}
+
+type SensorReading @table {
+  farmPlot: FarmPlot!
+  timestamp: Timestamp!
+  sensorType: String!
+  value: Float!
+  unit: String!
+}
+
+type IrrigationSchedule @table {
+  farmPlot: FarmPlot!
+  name: String!
+  startTime: Timestamp!
+  endTime: Timestamp!
+  frequency: String!
+  waterAmount: Float!
+  unit: String!
+  createdAt: Timestamp!
+  description: String
+  status: String
+}
+
+type Observation @table {
+  user: User!
+  farmPlot: FarmPlot!
+  crop: Crop
+  timestamp: Timestamp!
+  type: String!
+  notes: String!
+  createdAt: Timestamp!
+  severity: String
+  photoUrl: String
+}

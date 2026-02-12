@@ -12,7 +12,7 @@ public class LatestFarmData {
 
     public String source;     // WIFI | BLE | MANUAL
     public long timestamp;
-
+    public WeatherForecast forecast;
     // Required empty constructor for Firebase
     public LatestFarmData() {
     }
